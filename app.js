@@ -31,3 +31,11 @@ window.addEventListener('load', function() {
         console.error("No se encontró el elemento del loader");
     }
 });
+
+
+// Función para mostrar/ocultar el menú
+function mostrarMenu() {
+    navHeader.classList.toggle("mostrarNav");
+    iconoheader.classList.toggle("fa-bars");
+    iconoheader.classList.toggle("fa-x");
+}
