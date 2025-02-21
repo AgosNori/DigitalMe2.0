@@ -1,0 +1,224 @@
+
+body {
+  background-image: url("../imagenes/fondos/fondoGradiante1.png");
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 0;
+  font-family: "Poppins",serif;
+} 
+
+.contacto {
+  margin-top: 100px;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloContacto {
+  font-family: "alegreyaLightIt";
+
+  color: white;
+  padding: 0;
+  margin: 0px;
+  margin-bottom: 40px;
+  font-size: 45px;
+  transform: rotate(-90deg);
+}
+
+.formularioContacto {
+  font-family: "Questrial";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+  max-width: 600px; /* Ajusta el ancho máximo del formulario */
+  margin-left: -150px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los campos */
+  width: 100%;
+}
+
+.input, .textareaContact {
+  font-family: "Questrial";
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border 0.5s, box-shadow 0.5s;
+}
+
+.input {
+  height: 50px;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid #013F4E;
+}
+
+.textareaContact {
+  min-height: 150px; /* Ajusta el alto para pantallas más pequeñas */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.textareaContact:focus {
+  outline: none;
+  border: 2px solid rgb(0, 63, 134);
+  box-shadow: 0 0 10px rgb(0, 63, 134);
+}
+.input::placeholder{
+  font-size: 17px;
+}
+textarea::placeholder{
+  font-size: 17px;
+}
+.checkBoxLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#checkboxCorreo {
+  margin: 0;
+}
+
+.submitContacto {
+  background-color: #013f4e;
+  color: white;
+  border: none;
+  height: 60px;
+  border-radius: 5px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.submitContacto:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #0e4a66;
+}
+
+.tituloSuscripcion {
+  color: #fff;
+
+  font-family: "alegreyaLightIt";
+  font-size: 20px;
+
+  margin-bottom: 20px;
+}
+
+  
+  @media (max-width: 1024px) {
+    .formularioSuscripcion{
+      width: 90%;
+
+    }
+    .formularioSuscripcion #inputCorreo{
+      width: 90%;
+    }
+    .footer-contenido {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  @media (max-width:1225px){
+    .formularioContacto{
+      padding: 0;
+    }
+  }
+  @media (max-width: 1024px) {
+    .formularioContacto {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .textareaContact {
+      min-width: 80%;
+      min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .tituloContacto{
+      transform: rotate(0deg);
+    }
+    .contacto {
+      flex-flow: column nowrap;
+      justify-content: center;
+
+    }
+    .formularioContacto{
+      margin: 0px;
+    }
+    .tituloContacto {
+      font-size: 35px;
+    }
+  
+    .textareaContact {
+      min-width: 100%;
+      min-height: 200px;
+      font-size: 14px;
+    }
+  
+    input {
+      margin-top: 5px;
+
+    }
+
+  .checkBoxLabel{
+    margin-top: 20px;
+  }
+    .submitContacto {
+      margin-top: 20px;
+
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contacto {
+      padding: 10px;
+    }
+  
+    .tituloContacto {
+      font-size: 25px;
+    }
+  
+    .textareaContact {
+      min-height: 150px;
+      font-size: 12px;
+    }
+  
+    .input {
+      font-size: 12px;
+    }
+  
+    .submitContacto {
+      height: 50px;
+      font-size: 12px;
+    }
+  }
+  @media (max-width:1024px) and (min-width:768px) {
+    .contacto{
+      justify-content: space-around;
+    }
+    .formularioContacto {
+      margin-left: 0px;
+    }
+  }

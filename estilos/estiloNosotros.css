@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+main{
+    text-align:center;
+    justify-content:center;
+}
+.indicadorSeccion {
+  color: black;
+}
+
+.bannerNosotros {
+  width: 100%;
+  background-image: url("../imagenes/banners/patternpad-2025-02-18-17-36-34.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 35px;
+}
+.tituloPrincipalNosotros {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 55px;
+  color: white;
+  max-width: 600px;
+  padding: 10px;
+
+}
+.btnBannerNosotros {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to left, #00000000, #f42b03, #00000000) 1;
+
+  border-radius: 10px;
+}
+
+.btnBannerNosotros:hover {
+  animation: btnAnimacion 1s;
+  box-shadow: 0 0 15px #f42b03;
+}
+@keyframes btnAnimacion {
+  0% {
+    box-shadow: 0 0 10px #f42b0305;
+  }
+  100% {
+    box-shadow: 0 0 15px #f42b03;
+  }
+}
+.containerLogScroll{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+  .iconoScrollCelu{
+
+    display:none;
+    width:40px;
+    height:40px;
+    color:white;
+}
+.cartasNosotros{
+    background-image: linear-gradient(to bottom,#000,#5c5c5c);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+
+}
+.cartasNosotros .carta{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width:50%;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: justify;
+
+
+    margin-top: 20px;
+}
+
+.tituloCarta{
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    display: inline-block;
+
+    font-size: 35px;
+    padding: 20px;
+    color: white;
+}
+
+.parrafoCarta{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+.acordeonCarta{
+    width: 100%;
+}
+.accordion {
+    background-color: #eeeeee00;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+
+  }
+.accordion h5{
+    font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight:300;
+}
+  .active, .accordion:hover {
+    background-color: #cccccc42;
+  }
+
+  .icon{
+    width: 24px;
+    content: url("../imagenes/iconosAcordeon/plus.svg");
+
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: #cccccc42;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .parrafoAcordeon{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+  }
+  .iconoPlus{
+    background-image: linear-gradient(to left,rgb(187, 88, 70),#f42);
+    -webkit-background-clip: content-box;
+    border-radius: 5px;
+
+  }
+  .iconActive{
+    animation: iconoPremium 0.5s ease-in;
+    content: url("../imagenes/iconosAcordeon/dash.svg");
+    background-image: linear-gradient(to left,rgb(187, 88, 70),rgb(145, 104, 97));
+  }
+  @keyframes iconoPremium {
+    0% {
+        transform: rotate(0deg);    
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+
+ 
+  .contenedorLoader{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(0, 0, 0);
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 999;
+    margin: 0;
+  
+  
+    clip-path: circle(501.4% at 100% 0);
+  }
+  .spinnerLoader{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 9px solid #ff2a009a;
+    border-bottom: 9px solid #f42b03;
+    border-top: 9px solid #f42b03;
+  
+    animation: spin ease 2s infinite alternate;
+  }
+  .imgLoader{
+    width: 150px;
+    animation: imgLogo 1s infinite alternate;
+  
+  }
+  @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+  
+    }
+  }
+    @keyframes imgLogo {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity:0;
+        }
+    }
+  .loader-hidden{
+    clip-path: circle(200.4% at 100% 0);
+    clip-path: circle(0.0% at 100% 0);
+    animation:ocultarLoader 3s ease-in;
+  
+  
+  }
+  @keyframes ocultarLoader {
+    0%{
+        clip-path: circle(501.4% at 100%);
+  
+    }
+    50%{
+        clip-path: circle(300.0% at 100%);
+    }
+    100%{
+        clip-path: circle(0% at 100%);
+  
+    }
+  }
+  
+  
+
+  @media (max-width: 790px){
+
+    .tituloPrincipalNosotros{
+
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .cartasNosotros .carta{
+      color: white;
+      flex-flow: column nowrap;
+      padding: 0;
+      max-width: 100%;
+      margin-left: 0;
+    }
+    .tituloCarta{
+      font-size: 40px;
+      padding: 5px;
+      transform: rotate(0deg);
+    }
+    .parrafoCarta{
+    font-size: 15px;
+    padding:6px;
+    max-width: 100%;
+  }  
+  
+  .acordeon{
+    width: 100%;
+  }
+  .contactWhats{
+    left: 75%;
+  }
+  .subir{
+    left: 75%;
+  }
+}
+  @media(max-width:770px){
+    .iconoScrollCelu{
+    display:block;
+    width:140px;
+    height:140px;
+    color:white;
+}
+  }
+  @media (min-width:770px){
+    .tituloPrincipalNosotros{
+      max-width: 600px;
+      min-width: 600px;
+    }
+  }
+
+
+
+@media (max-width: 1024px) {
+  .formularioSuscripcion{
+    width: 90%;
+
+  }
+  .formularioSuscripcion #inputCorreo{
+    width: 90%;
+  }
+
+}
+@media (max-width:470px){
+  .cartasNosotros{
+    align-items: baseline;
+  }
+  .bannerNosotros{
+    justify-content: center;
+    align-items: center;
+  }
+      .tituloPrincipalNosotros{
+      max-width: 300px;
+
+    }
+}
+@media (max-width:599){
+  .parrafoCarta{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
