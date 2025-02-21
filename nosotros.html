@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nosotros.css">
+    </head>
+    <body>
+        <header class="header">
+            <div>
+                <img src="./imagenes/sf_logoRedondo.png" class="logo"
+                    alt="logo" />
+            </div>
+            <div>
+                <nav class="navBarHeader">
+                    <a href="#" class="linkHeader actual">Inicio</a>
+                    <a href="./pages/nosotros.html"
+                        class="linkHeader">Nosotros</a>
+                    <a href="./pages/servicios.html"
+                        class="linkHeader">Servicios</a>
+                    <a href="./pages/portfolios.html"
+                        class="linkHeader">Portafolio</a>
+                    <a href="genialab.html" class="linkHeader">GenialLab</a>
+                    <a href="./pages/contacto.html" target="_blank"
+                        class="linkHeader">Contacto</a>
+                </nav>
+            </div>
+            <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
+
+            <label class="hamburger">
+                <input type="checkbox" id="menuToggle" />
+                <svg viewBox="0 0 32 32">
+                    <path
+                        class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </header>
+<section class="misionvalor">
+    <img src="imagenes/Innovación.png" width="100%">
+</section>
+        <!--- Acordeon  -->
+        <section class="acordeon">
+            <main>
+
+                <section class="accordion" id="innovacion">
+                    <h2 class="title"><a href="#innovacion"><span>Innovación</span><img src="imagenes/Innovacion.png" width="30px"></a></h2>
+                    <div class="content">
+                        <div class="wrapper">
+                            <p>
+                                Promovemos la creatividad y la adopción de
+                                nuevas tecnologías para ofrecer soluciones
+                                vanguardistas.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="accordion" id="adaptabilidad">
+                    <h2 class="title"><a
+                            href="#adaptabilidad"><span>Adaptabilidad</span>  <img src="imagenes/adaptabilidad.png" width="30px" ></a></h2>
+                    <div class="content">
+                        <div class="wrapper">
+                            <p>
+                                Respondemos ágilmente a los cambios del mercado
+                                y las necesidades de nuestros clientes,
+                                asegurando relevancia y efectividad.
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="accordion" id="excelencia">
+                    <h2 class="title"><a href="#excelencia"><span>
+                        Excelencia 
+                    </span><img src="imagenes/excelencia.png" width="30px"></a></h2>
+                    <div class="content">
+                        <div class="wrapper">
+                            <p>
+                                Nos comprometemos a entregar resultados de alta
+                                calidad, cuidando cada detalle en nuestro
+                                trabajo.
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="accordion" id="equipo">
+                    <h2 class="title"><a href="#equipo">
+                        <span>
+                            Trabajo en
+                            Equipo 
+                        </span><img src="imagenes/equipo.png" width="30px" ></a></h2>
+                    <div class="content">
+                        <div class="wrapper">
+                            <p>
+                                Fomentamos la colaboración y el intercambio de
+                                ideas, tanto dentro de nuestra empresa como con
+                                nuestros clientes.
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="accordion" id="calidez">
+                    <h2 class="title">
+                        <a href="#calidez">
+                            <span>Calidez</span>
+                            <img src="imagenes/calidez.png" width="30px">
+                        </a>
+                    </h2>
+                    <div class="content">
+                        <div class="wrapper">
+                            <p>
+                                Valoramos las relaciones humanas y brindamos un
+                                servicio cercano y personalizado, creando un
+                                ambiente de confianza y apoyo.
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-contenido">
+                <div class="imgFooter">
+                    <img class="logoF"
+                        src="imagenes\LogoCuadrado-removebg-preview.png"
+                        width="200px">
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-lista">
+                        <li>
+                            <a href="./pages/nosotros.html"
+                                class="footer-link">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./pages/servicios.html"
+                                class="footer-link">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="./pages/portfolio"
+                                class="footer-link">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="./pages/genialLab.html"
+                                class="footer-link">GenialLab</a>
+                        </li>
+                        <li>
+                            <a
+                                href="./pages/contacto.html"
+                                target="_blank"
+                                class="footer-link">Contacto</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="contenedorFooter">
+                    <div class="parteFinal">
+                        <form class="formularioSuscripcion"
+                            id="formSuscripcion">
+                            <input
+                                id="inputCorreo"
+                                type="email"
+                                name="correo"
+                                placeholder="Ingrese su correo:"
+                                required />
+                            <button type="submit"
+                                id="btnSuscripcion">Suscribirse</button>
+                        </form>
+                    </div>
+
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 DigitalMe - Todos los derechos
+                            reservados.</p>
+                    </div>
+                </div>
+
+            </footer>
+        </body>
+    </html>
