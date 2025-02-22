@@ -1,38 +1,28 @@
-const loaderElement = document.querySelector(".contenedorLoader");
-const header = document.querySelector('.header');
-const btnMenu = document.querySelector(".menuResp");
-const navHeader = document.querySelector(".navBarHeader");
-const iconoheader = document.querySelector(".fa-bars");
+const contCarta=document.querySelector(".containerCartas");
+const trb1 = document.querySelector("#trabajo1");
+const trb2 = document.querySelector("#trabajo2");
+const trb3 = document.querySelector("#trabajo3");
+
+const contTrb1 = document.querySelector("#contTrabajo1");
+const contTrb2 = document.querySelector("#contTrabajo2");
+const contTrb3 = document.querySelector("#contTrabajo3");
 
 
-// Variable para controlar la posición de scroll
-let lastScrollTop = 0;
 
-// Evento de scroll para mostrar/ocultar el header
-window.addEventListener("scroll", function() {
-    let scrollTop = window.scrollY;
-    if (scrollTop > lastScrollTop) {
-        header.classList.add("hide"); // Scroll hacia abajo
-    } else {
-        header.classList.remove("hide"); // Scroll hacia arriba
+contCarta.onmouseover = (e)=>{
+    if(e.target.id === trb1.id){
+        contTrb1.classList.toggle("mostrarContenido");
+        contTrb2.classList.remove("mostrarContenido");
+        contTrb3.classList.remove("mostrarContenido");
     }
-    lastScrollTop = scrollTop; // Actualizamos lastScrollTop
-});
-
-// Evento de load para ocultar el loader
-window.addEventListener('load', function() {
-    if (loaderElement) {
-        loaderElement.classList.add("loader-hidden");
-        console.log("Loader ocultado");
-    } else {
-        console.error("No se encontró el elemento del loader");
+    if(e.target.id === trb2.id){
+        contTrb2.classList.toggle("mostrarContenido");
+        contTrb1.classList.remove("mostrarContenido");
+        contTrb3.classList.remove("mostrarContenido");
     }
-});
-
-// Función para mostrar/ocultar el menú
-function mostrarMenu() {
-    navHeader.classList.toggle("mostrarNav");
-    iconoheader.classList.toggle("fa-bars");
-    iconoheader.classList.toggle("fa-x");
+    if(e.target.id === trb3.id){
+        contTrb3.classList.toggle("mostrarContenido");
+        contTrb2.classList.remove("mostrarContenido");
+        contTrb1.classList.remove("mostrarContenido");
+    }
 }
-    
