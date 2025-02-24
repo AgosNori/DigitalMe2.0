@@ -49,7 +49,7 @@ hr{
 .textoImgServ{
     display: flex;
     flex-flow: row nowrap;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     padding:30px ;
     gap: 20px;
@@ -64,6 +64,8 @@ hr{
     padding: 10px;
     min-width: 200px;
     border-radius: 5px;
+ 
+    
     border: none;
     text-decoration: none;
     background-color: #24698b;
@@ -83,7 +85,6 @@ hr{
     display: grid;
     grid-template-columns:1, 1fr;
     gap: 30px;
-
     width:0px;
     height: 0px;
     transition: 0.5s;
@@ -113,6 +114,9 @@ hr{
 .cartaDesplegada{
     display: block;
     color: white;
+}
+.btnParrafoServ .parrafoServ{
+    font-size: 15px;
 }
 @media (max-width:1000px) {
     main{

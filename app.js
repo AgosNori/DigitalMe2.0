@@ -45,10 +45,10 @@ function mostrarMenu() {
 function desplegarDrop(){
     contenidoDrop.classList.toggle("contenidoActivo");
 
-    if (btnDrop.textContent === "Mas info"){
-        btnDrop.textContent = "Ver menos";
+    if (btnDrop.textContent === "Ver menos"){
+        btnDrop.textContent = "Mas info";
     }
     else{
-        btnDrop.textContent = "Mas info";
+        btnDrop.textContent = "Ver menos";
     }
 }
