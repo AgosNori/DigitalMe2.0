@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="./imagenes/sf_logoRedondo.png" class="logo"
+                alt="logo" />
+        </div>
+        <div>
+            <nav class="navBarHeader">
+                <a href="index.html" class="linkHeader actual">Inicio</a>
+                <a href="nosotros.html"
+                    class="linkHeader">Nosotros</a>
+                <a href="servicios.html"
+                    class="linkHeader">Servicios</a>
+                <a href="portfolios.html"
+                    class="linkHeader">Portafolio</a>
+                <a href="genialab.html" class="linkHeader">GenialLab</a>
+                <a href="contacto.html" target="_blank"
+                    class="linkHeader">Contacto</a>
+            </nav>
+        </div>
+        <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
+
+        <label class="hamburger">
+            <input type="checkbox" id="menuToggle" />
+            <svg viewBox="0 0 32 32">
+                <path
+                    class="line line-top-bottom"
+                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+    </header>
+    <section class="portfolio cards">
+        <div class="proyecto card " data-id="proyecto1">
+            <div class="proyecto-img">
+                <img src="imagenes\portfolioImg\Captura de pantalla 2024-11-15 172507.png" alt="Proyecto 1">
+            </div>
+            <h3>Concesionaria</h3>
+            <p>Este desarrollo es un modelo de sitio web de concesionaria en el cual se implementaron HTML, CSS y JS.</p>
+            <div class="acciones">
+                <button class="like-btn">❤️ <span class="like-count">0</span></button>
+                <a href="https://tusitio.com/proyecto1" target="_blank" class="visit-btn">🔗 Visitar Sitio</a>
+            </div>
+        </div>
+    
+       
+    
+        <div class="proyecto card " data-id="proyecto3">
+            <div class="proyecto-img">
+                <img src="imagenes\portfolioImg\Captura de pantalla 2024-11-18 174009.png" alt="Proyecto 3">
+            </div>
+            <h3>Cita Monte Cristo</h3>
+            <p>Este desarrollo es un sitio web de una iglesia evangelica de la provincia de Córdoba. El cual está desarrollado con HTMl, CSS y JS</p>
+            <div class="acciones">
+                <button class="like-btn">❤️ <span class="like-count">0</span></button>
+                <a href="https://tusitio.com/proyecto3" target="_blank" class="visit-btn">🔗 Visitar Sitio</a>
+            </div>
+        </div>
+        <div class="proyecto card " data-id="proyecto3">
+            <div class="proyecto-img">
+                <img src="imagenes\portfolioImg\Captura de pantalla 2025-01-02 184909.png" alt="Proyecto 3">
+            </div>
+            <h3>Maria Luisa Cakes</h3>
+            <p>Este desarrollo es un sitio web de una iglesia evangelica de la provincia de Córdoba. El cual está desarrollado con HTMl, CSS y JS</p>
+            <div class="acciones">
+                <button class="like-btn">❤️ <span class="like-count">0</span></button>
+                <a href="https://tusitio.com/proyecto3" target="_blank" class="visit-btn">🔗 Visitar Sitio</a>
+            </div>
+        </div>
+        <div class="proyecto card " data-id="proyecto3">
+            <div class="proyecto-img">
+                <img src="imagenes\portfolioImg\Captura de pantalla 2025-02-24 174323.png" alt="Proyecto 3">
+            </div>
+            <h3>Portfolio Personal</h3>
+            <p>Este desarrollo es un sitio web de una iglesia evangelica de la provincia de Córdoba. El cual está desarrollado con HTMl, CSS y JS</p>
+            <div class="acciones">
+                <button class="like-btn">❤️ <span class="like-count">0</span></button>
+                <a href="https://tusitio.com/proyecto3" target="_blank" class="visit-btn">🔗 Visitar Sitio</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="imgFooter">
+                <img class="logoF"
+                    src="imagenes\LogoCuadrado-removebg-preview.png"
+                    width="200px">
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-lista">
+                    <li>
+                        <a href="./pages/nosotros.html"
+                            class="footer-link">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="./pages/servicios.html"
+                            class="footer-link">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="./pages/portfolio"
+                            class="footer-link">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/genialLab.html"
+                            class="footer-link">GenialLab</a>
+                    </li>
+                    <li>
+                        <a
+                            href="./pages/contacto.html"
+                            target="_blank"
+                            class="footer-link">Contacto</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="contenedorFooter">
+                <div class="parteFinal">
+                    <form class="formularioSuscripcion"
+                        id="formSuscripcion">
+                        <input
+                            id="inputCorreo"
+                            type="email"
+                            name="correo"
+                            placeholder="Ingrese su correo:"
+                            required />
+                        <button type="submit"
+                            id="btnSuscripcion">Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>&copy; 2024 DigitalMe - Todos los derechos
+                        reservados.</p>
+                </div>
+            </div>
+
+        </footer>
+</body>
+</html>
