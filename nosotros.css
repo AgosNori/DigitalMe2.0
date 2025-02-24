@@ -210,3 +210,68 @@ main :last-child,
     width: 30px;
     height: auto;
 }
+
+.bannerNosotros {
+    width: 100%;
+    background-image: url("imagenes/patternNosotros.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tituloValores{
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+	font-weight: 200;
+	font-size: 30px;
+}
+
+
+.misionvalor {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #2a2a2a, #2a5298);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mision, .vision {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.mision:hover, .vision:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tituloM h3, .tituloV h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.descripM p, .descripV p {
+    font-size: 16px;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
