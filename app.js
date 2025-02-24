@@ -5,7 +5,8 @@ const btnMenu = document.querySelector(".menuResp");
 const navHeader = document.querySelector(".navBarHeader");
 const iconoheader = document.querySelector(".fa-bars");
 
-
+let contenidoDrop =document.querySelector(".contenidoDrop");
+let btnDrop=document.querySelector(".btnDesDrop");
 
 
 const linkImg = document.querySelector("#contenedorRoadmap");
@@ -38,4 +39,16 @@ function mostrarMenu() {
     navHeader.classList.toggle("mostrarNav");
     iconoheader.classList.toggle("fa-bars");
     iconoheader.classList.toggle("fa-x");
+}
+
+// función para desplegar el drop
+function desplegarDrop(){
+    contenidoDrop.classList.toggle("contenidoActivo");
+
+    if (btnDrop.textContent === "Mas info"){
+        btnDrop.textContent = "Ver menos";
+    }
+    else{
+        btnDrop.textContent = "Mas info";
+    }
 }
