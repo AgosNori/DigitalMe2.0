@@ -474,6 +474,8 @@ iconify-icon:hover {
 
 .card__btn:hover {
     border: 1px solid #f42b03;
+    background-color: #f42b03;
+    box-shadow: 0px 5px 10px #f42b03;
 }
 
 .imgPerfil {
