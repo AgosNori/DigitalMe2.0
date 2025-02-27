@@ -169,116 +169,80 @@
 }
 
 /* servicios */
-.swiper-wrapper {
-    display: flex;
-}
-
-.swiper {
-    width: 80%;
-    max-width: 900px;
-    margin: 50px;
-
-    overflow: visible !important;
-    /* Permitir que los tooltips sobresalgan */
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
-
-.tarjeta {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    border: 1px solid #000000;
-    border-radius: 100%;
-    text-align: center;
-    position: relative;
-    background: #2a2a2a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.logo .iconoServicio {
-    font-size: 60px;
-    cursor: pointer;
-    display: block;
-}
-
-.tooltip {
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 220px;
-    /* Aumentamos un poco el ancho */
-    max-width: 280px;
-    /* Para evitar tooltips demasiado anchos */
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, transform 0.3s;
-    white-space: normal;
-    /* Permitir saltos de línea */
-    word-wrap: break-word;
-    /* Asegurar que el texto no desborde */
-}
-
-.tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
-}
-
-/* Ajustamos el tooltip cuando se activa */
-.logo:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(-5px);
-}
-
 .servicios .tituloSeccion {
     display: flex;
     justify-content: center;
-    color: rgb(0, 0, 0);
-    margin: 40px;
     font-weight: 200;
-
+    margin: 40px;
+    text-align: center;
 }
 
-.tooltip .tituloDelServicio {
-    font-size: 15px;
+.tarjetasServicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.cardS {
+    width: 25%; 
+    max-width: 300px; 
+    background-color: #2a2a2a;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardS:hover {
+    box-shadow: 10px 20px 20px rgba(154, 58, 58, 0.5);
+}
+
+
+.cardS .headerCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.number h2 {
+    font-weight: 200;
+}
+
+.titulo {
     margin: 10px;
+    color: white;
 }
 
-.tooltip .parrafoServicio {
+.parrafo {
+    color: white;
+    margin: 30px;
     text-align: justify;
-    margin: 5px;
 }
 
-.tooltip .btnServicio {
-    color: #f42b03;
-    text-decoration: none;
-    font-weight: 500;
+
+.img iconify-icon {
+    font-size: 50px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .cardS {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardS {
+        width: 80%;
+    }
 }
 
 /* Estilos generales del carrusel */
@@ -937,7 +901,7 @@ footer {
         justify-content: center;
     }
 
-  .footer-nav-lista{
-  flex-wrap: wrap;
-  }
+    .footer-nav-lista {
+        flex-wrap: wrap;
+    }
 }
