@@ -103,7 +103,7 @@
 
 .banner .contenidoBanner h1 strong {
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .contenidoBanner {
@@ -119,6 +119,12 @@
     border: solid #f42b03 0.3px;
     padding: 10px;
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.btnBanner:hover{
+    background-color: #ff5733;
+    color: white;
+    box-shadow: 0 0 10px #ff5733;
 }
 
 .btnBannerPresupuesto {
@@ -131,7 +137,15 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    transition: all 0.3s ease-in-out;
 
+}
+.btnBannerPresupuesto:hover{
+
+        background-color: #ff5733;
+        color: white;
+        box-shadow: 0 0 10px #ff5733;
+      
 }
 
 /* Nosotros */
@@ -166,6 +180,12 @@
     border-radius: 20px;
     margin: 30px;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.btnNosotros:hover{
+    background-color: #ff5733;
+    color: white;
+    box-shadow: 0 0 10px #ff5733;
 }
 
 /* servicios */
@@ -184,7 +204,10 @@
     gap: 30px;
 }
 
-
+.numberService ,.tituloService{
+    color: #F8ED8C;
+    font-weight: 200;
+}
 .cardS {
     width: 25%; 
     max-width: 300px; 
@@ -397,7 +420,16 @@ iconify-icon:hover {
     padding: 10px 30px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px #f42b0357;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
 }
+.linkNovedad:hover{
+    background-color: #ff5733;
+    color: white;
+    box-shadow: 0 0 10px #ff5733;
+}
+
+
 
 /* Nuestro equipo */
 
@@ -656,61 +688,6 @@ footer {
 }
 
 
-.botonesF {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    position: fixed;
-    left: 85%;
-    top: 90%;
-    z-index: 999;
-}
-
-.btnF {
-    padding: 12px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px rgb(0, 0, 0);
-    transition: transform 0.2s ease-in-out;
-
-}
-
-.btnF a {
-    text-decoration: none;
-}
-
-.btnF:hover {
-    transform: scale(1.1);
-}
-
-.btnF i {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-
-}
-
-.subir:hover {
-    background: #f42b03;
-    background: linear-gradient(180deg, #f42b03 0%, #2a2a2a 100%);
-}
-
-
-.contactWhats:hover {
-    background: #25D366;
-    background: linear-gradient(to right,
-            #25D366, #128C7E, #075E54);
-}
-
-
-.Ig:hover {
-    background: #833ab4;
-    background: linear-gradient(to right,
-            #833ab4, #fd1d1d, #fcb045);
-}
 
 /* 
 .subir a .bi {
@@ -888,6 +865,23 @@ footer {
     .hamburger {
         display: block;
     }
+ 
+    .cartaNovedad{
+        width: 80%;
+        height: auto;
+        min-height: 600px;
+        justify-content: center;
+    }
+
+    .equipo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .textoRoadmap{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /* Responsive */
@@ -904,6 +898,10 @@ footer {
     }
 
     .footer-nav-lista {
+        flex-wrap: wrap;
+    }
+    .seccNovedades{
+        display: flex;
         flex-wrap: wrap;
     }
 }

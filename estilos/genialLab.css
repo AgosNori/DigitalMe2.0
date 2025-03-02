@@ -27,7 +27,7 @@
 
 
 .comprar {
-    background-image: url("imagenes/back.png");
+    background-image: url("../imagenes/back.png");
     background-repeat: no-repeat;
     background-size: cover;
     /* Asegura que el fondo cubra toda la pantalla */

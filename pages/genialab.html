@@ -3,25 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="genialLab.css" />
+    <title>GenialLab</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../estilos/genialLab.css" />
+    <link rel="stylesheet" href="../estilos/estilosRedes.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet" />
+    <link rel="icon" href="../imagenes/sf_logoRedondo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
   <body>
     <header class="header">
       <div>
-        <img src="./imagenes/sf_logoRedondo.png" class="logo" alt="logo" />
+        <img src="../imagenes/sf_logoRedondo.png" class="logo" alt="logo" />
       </div>
       <div>
         <nav class="navBarHeader">
-          <a href="#" class="linkHeader actual">Inicio</a>
+          <a href="../index.html" class="linkHeader actual">Inicio</a>
           <a href="nosotros.html" class="linkHeader">Nosotros</a>
           <a href="servicios.html" class="linkHeader">Servicios</a>
           <a href="portfolios.html" class="linkHeader">Portafolio</a>
           <a href="genialab.html" class="linkHeader">GenialLab</a>
-          <a href="contacto.html" target="_blank" class="linkHeader"
-            >Contacto</a
-          >
+          <a href="contacto.html" target="_blank"
+            class="linkHeader">Contacto</a>
         </nav>
       </div>
       <!-- <a class="menuResp" onclick="mostrarMenu()"><i class="fa-solid fa-bars"></i></a> -->
@@ -31,18 +40,17 @@
         <svg viewBox="0 0 32 32">
           <path
             class="line line-top-bottom"
-            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-          ></path>
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
           <path class="line" d="M7 16 27 16"></path>
         </svg>
       </label>
     </header>
     <section class="bannerGenial">
-      <img src="imagenes/GenialLab.png" width="100%" />
+      <img src="../imagenes/GenialLab.png" width="100%" />
     </section>
     <section class="presentacion">
-      <h1 class="tituloPresentacion">Un nuevo mundo te espera!</h1>
-      <div class="cuerpoPresentacion">
+      <h1 class="tituloPresentacion" data-aos="fade-right">Un nuevo mundo te espera!</h1>
+      <div class="cuerpoPresentacion" data-aos="fade-up">
         <div class="text">
           <p>
             Es un obra esencial para educadores y estudiantes interesados en el
@@ -62,7 +70,7 @@
           </p>
         </div>
         <div class="fotoLibro">
-          <img src="imagenes/portada.webp" />
+          <img src="../imagenes/portada.webp" />
         </div>
       </div>
     </section>
@@ -77,8 +85,8 @@
           <h2 class="tituloSeccion">Disponible en estas tiendas</h2>
         </div>
         <div class="tarjetasLibros">
-          <div class="cardGenial">
-            <img src="imagenes/book.png" width="40px" class="imgBook" />
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgBook" />
             <h3 class="tituloLugar">Mythos Libros</h3>
             <p class="textCard">
               Adquiérelo en su tienda física o a través de su plataforma online
@@ -88,14 +96,13 @@
             <div class="seccionbtn">
               <button
                 class="btnBook"
-                href="https://www.mythoslibros.com.ar/?srsltid=AfmBOoqo4P7kjvh61m5wExwgqYyZh4HQGvAzTl7mGFOadb_onbr8O93X"
-              >
+                href="https://www.mythoslibros.com.ar/?srsltid=AfmBOoqo4P7kjvh61m5wExwgqYyZh4HQGvAzTl7mGFOadb_onbr8O93X">
                 Adquirir
               </button>
             </div>
           </div>
-          <div class="cardGenial">
-            <img src="imagenes/book.png" width="40px" class="imgBook" />
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgBook" />
             <h3 class="tituloLugar">La Boutique del Libro</h3>
             <p class="textCard">
               Una tienda especializada en literatura con una gran selección de
@@ -105,15 +112,14 @@
             <div class="seccionbtn">
               <button
                 class="btnBook"
-                href="https://boutiquedellibro.mercadoshops.com.ar/"
-              >
+                href="https://boutiquedellibro.mercadoshops.com.ar/">
                 Adquirir
               </button>
             </div>
           </div>
 
-          <div class="cardGenial">
-            <img src="imagenes/book.png" width="40px" class="imgBook" />
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgBook" />
             <h3 class="tituloLugar">Rayuela Rio Grande</h3>
             <p class="textCard">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
@@ -124,8 +130,8 @@
               <button class="btnBook">Adquirir</button>
             </div>
           </div>
-          <div class="cardGenial">
-            <img src="imagenes/book.png" width="40px" class="imgBook" />
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgBook" />
             <h3 class="tituloLugar">EcoLibro</h3>
             <p class="textCard">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
@@ -136,8 +142,8 @@
               <button class="btnBook">Adquirir</button>
             </div>
           </div>
-          <div class="cardGenial">
-            <img src="imagenes/book.png" width="40px" class="imgBook" />
+          <div class="cardGenial" data-aos="fade-up">
+            <img src="../imagenes/book.png" width="40px" class="imgBook" />
             <h3 class="tituloLugar">Mercado Libre</h3>
             <p class="textCard">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
@@ -155,30 +161,38 @@
     <section class="cursos">
       <h2 class="titulo">Cursos y Capacitaciones</h2>
       <div class="tarjetasCursos">
-        <div class="cardGenial">
-          <img src="imagenes/figma.jpg" width="400px" class="imgBook" />
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/figma.jpg" width="400px" class="imgBook" />
           <h3>Maquetado con Figma</h3>
           <p class="textCard">
-            Domina el diseño de interfaces con Figma y aprende a crear maquetas web profesionales.  En este curso te enseñaremos desde los conceptos básicos hasta técnicas avanzadas de diseño UX/UI, prototipado y colaboración en equipo. ¡ Lleva tus ideas a otro nivel y crea proyectos visualmente impactantes!.
+            Domina el diseño de interfaces con Figma y aprende a crear maquetas
+            web profesionales. En este curso te enseñaremos desde los conceptos
+            básicos hasta técnicas avanzadas de diseño UX/UI, prototipado y
+            colaboración en equipo. ¡ Lleva tus ideas a otro nivel y crea
+            proyectos visualmente impactantes!.
             <br><br>
             Dificultad : Principiante
             <br>
             Duración : 2 semanas
-            
+
           </p>
           <br><br>
           <div class="seccionPrecio">
             <h3 class="precio"> $50.000</h3>
           </div>
           <div class="seccionbtn">
-            <button class="btnCurso"><a href="">Ver Curso</a></button>
+            <button class="btnCurso"><a href>Ver Curso</a></button>
           </div>
         </div>
-        <div class="cardGenial">
-          <img src="imagenes/github.jpg" width="400px" class="imgBook" />
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/github.jpg" width="400px" class="imgBook" />
           <h3>Creación y manejo de repositorios</h3>
           <p class="textCard">
-            Aprende a gestionar el control de versiones con Git y Github desde cero. Este curso, conocerás los camandos básicos de Git, crearás tu primer archivo README y subirás tu proyecto a Github paso a paso. Ideal para quienes quieren comenzar a trabajar de manera colaborativa y profesional en el desarrollo de software.
+            Aprende a gestionar el control de versiones con Git y Github desde
+            cero. Este curso, conocerás los camandos básicos de Git, crearás tu
+            primer archivo README y subirás tu proyecto a Github paso a paso.
+            Ideal para quienes quieren comenzar a trabajar de manera
+            colaborativa y profesional en el desarrollo de software.
             <br><br>
             Dificultad : Principiante
             <br>
@@ -189,14 +203,19 @@
             <h3 class="precio">$50.000</h3>
           </div>
           <div class="seccionbtn">
-            <button class="btnCurso"><a href="">Ver Curso</a></button>
+            <button class="btnCurso"><a href>Ver Curso</a></button>
           </div>
         </div>
-        <div class="cardGenial">
-          <img src="imagenes/programacion.jpg" width="400px" class="imgBook" />
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/programacion.jpg" width="400px"
+            class="imgBook" />
           <h3>Diseño y Desarrollo Web</h3>
           <p class="textCard">
-            Aprende a crear sitios web desde cero con HTML, CSS y JavaScript. En este curso, te enseñaremos los fundamentos del desarrrollo web, desde la estructura de una página hasta la creación de diseños atractivos y dinámicos. Ideal para principiantes que quieren dar sus primeros pasos en el mundo del desarrollo web.
+            Aprende a crear sitios web desde cero con HTML, CSS y JavaScript. En
+            este curso, te enseñaremos los fundamentos del desarrrollo web,
+            desde la estructura de una página hasta la creación de diseños
+            atractivos y dinámicos. Ideal para principiantes que quieren dar sus
+            primeros pasos en el mundo del desarrollo web.
             <br><br>
             Dificultad : Principiante
             <br>
@@ -207,14 +226,18 @@
             <h3 class="precio">$50.000</h3>
           </div>
           <div class="seccionbtn">
-            <button class="btnCurso"><a href="">Ver Curso</a></button>
+            <button class="btnCurso"><a href>Ver Curso</a></button>
           </div>
         </div>
-        <div class="cardGenial">
-          <img src="imagenes/python.jpg" width="400px" class="imgBook" />
+        <div class="cardGenial" data-aos="flip-up">
+          <img src="../imagenes/python.jpg" width="400px" class="imgBook" />
           <h3>Programación en Python</h3>
           <p class="textCard">
-            Aprende a programar dede cero con Python, uno de los lenguajes más versátiles y populares. En este curso, comenzarás con lo básico y avanzarás a estructuras fundamentales como condicionales, bucles y funciones. Ideal para quienes iniciarse en la programación de forma sencilla y práctica.
+            Aprende a programar dede cero con Python, uno de los lenguajes más
+            versátiles y populares. En este curso, comenzarás con lo básico y
+            avanzarás a estructuras fundamentales como condicionales, bucles y
+            funciones. Ideal para quienes iniciarse en la programación de forma
+            sencilla y práctica.
             <br><br>
             Dificultad : Principiante
             <br>
@@ -225,7 +248,7 @@
             <h3 class="precio">$50.000</h3>
           </div>
           <div class="seccionbtn">
-            <button class="btnCurso"><a href="">Ver Curso</a></button>
+            <button class="btnCurso"><a href>Ver Curso</a></button>
           </div>
         </div>
       </div>
@@ -234,7 +257,8 @@
     <footer class="footer">
       <div class="footer-contenido">
         <div class="imgFooter">
-          <img class="logoF" src="imagenes\LogoCuadrado-removebg-preview.png" width="200px">
+          <img class="logoF" src="../imagenes\LogoCuadrado-removebg-preview.png"
+            width="200px">
         </div>
         <nav class="footer-nav">
           <ul class="footer-nav-lista">
@@ -242,9 +266,7 @@
               <a href="./pages/nosotros.html" class="footer-link">Nosotros</a>
             </li>
             <li>
-              <a href="./pages/servicios.html" class="footer-link"
-                >Servicios</a
-              >
+              <a href="./pages/servicios.html" class="footer-link">Servicios</a>
             </li>
             <li>
               <a href="./pages/portfolio" class="footer-link">Portafolio</a>
@@ -256,35 +278,66 @@
               <a
                 href="./pages/contacto.html"
                 target="_blank"
-                class="footer-link"
-                >Contacto</a
-              >
+                class="footer-link">Contacto</a>
             </li>
-           
+
           </ul>
         </nav>
 
-        
         <div class="contenedorFooter">
           <div class="parteFinal">
-            <form class="formularioSuscripcion" id="formSuscripcion">  
+            <form class="formularioSuscripcion" id="formSuscripcion">
               <input
                 id="inputCorreo"
                 type="email"
                 name="correo"
                 placeholder="Ingrese su correo:"
-                required
-              />
+                required />
               <button type="submit" id="btnSuscripcion">Suscribirse</button>
             </form>
           </div>
-        
+
           <div class="footer-copyright">
             <p>&copy; 2024 DigitalMe - Todos los derechos reservados.</p>
           </div>
         </div>
-        
-      
-    </footer>
-  </body>
-</html>
+
+      </footer>
+      <div class="containerNav">
+        <a href="#" class="botonnav" data-title="Incio"><i
+                class="fa-solid fa-chevron-up "
+                style="color: #ffffff;"></i></a>
+        <a
+            href="https://wa.me/543513104381?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios."
+            class="botonnav" data-title="WhatsApp"><i
+                class="fa-brands fa-whatsapp"
+                style="color: #ffffff;"></i></a>
+        <a href="https://www.instagram.com/digitalme_ssdigitales/"
+            class="botonnav" data-title="Instagram"> <i
+                class="fa-brands fa-instagram "
+                style="color: #ffffff;"></i></a>
+        <a href="contacto.html" class="botonnav"
+            data-title="Consultas"><i
+                class="fa-solid fa-question"
+                style="color: #ffffff;"></i></a>
+    </div>
+      <div class="contenedorLoader">
+        <div class="spinnerLoader"></div>
+        <img src="../imagenes/sf_logoRedondo.png" alt="logo" class="imgLoader">
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js" async
+        defer></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="../scripts/scriptServicios.js"></script>
+      <script>
+  AOS.init();
+</script>
+
+    </body>
+  </html>
