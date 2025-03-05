@@ -85,6 +85,12 @@
     opacity: 0;
     transform: scale(0.1, 1);
 }
+.iconoNuevo {
+    height: auto;
+    vertical-align: middle; 
+    margin-right: 5px;
+    display: flex;
+}
 
 
 /* Banner*/
@@ -904,4 +910,77 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+
+/* estilos  para creador de paginas */
+
+.contarinerPresu{
+    height: 300px;
+    background: linear-gradient(45deg, #ff4e50, #fc913a);
+}
+.contarinerPresu p{
+    color: white;
+    font-size: 20px;
+    display: flex;
+align-content: center;
+    width: 40%;
+}
+
+.btnPresu {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #ff4e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btnPresu:hover {
+    background: #fc913a;
+}
+
+/* Cinta animada */
+.cinta-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ff4e50, #fc913a);
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.cinta {
+    display: flex;
+    width: 200%;
+    animation: scrollInfinite 15s linear infinite;
+}
+
+.cinta-contenido {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/* Animación infinita */
+@keyframes scrollInfinite {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* Efecto de parpadeo */
+.cinta span {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { opacity: 0.8; transform: scale(1); }
+    to { opacity: 1; transform: scale(1.1); }
 }
