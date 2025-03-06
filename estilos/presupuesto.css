@@ -2,11 +2,17 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
-
+.construye{
+    margin: 60px;
+}
+.tituloSec{
+    margin: 30px;
+}
 .container {
+  
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 .panel, .hoja {
@@ -20,17 +26,21 @@ body {
 
 .secciones {
     display: flex;
-    flex-direction: column; /* 🔹 Organiza los elementos en columna */
+flex-wrap: wrap;/* 🔹 Organiza los elementos en columna */
     align-items: center; /* 🔹 Centra las tarjetas */
     gap: 10px; /* 🔹 Espacio entre tarjetas */
 }
 
 .tarjeta {
-    width: 80%; /* 🔹 Ajusta el tamaño de las tarjetas */
+    width: 130px; 
+    height: 130px;/* 🔹 Ajusta el tamaño de las tarjetas */
     padding: 15px;
-    background: #f4f4f4;
+    background: #851c1c;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
     text-align: center;
     transition: background 0.3s;
 }
