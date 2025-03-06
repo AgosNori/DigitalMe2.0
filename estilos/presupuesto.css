@@ -2,69 +2,119 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
-.construye{
+
+.construye {
     margin: 60px;
-}
-.tituloSec{
-    margin: 30px;
-}
-.container {
-  
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
+
 }
 
-.panel, .hoja {
-    border: 2px solid #ccc;
+.tituloSec {
+    margin: 30px;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.panel,
+.hoja {
+    border:none;
     padding: 20px;
     width: 40%;
+    font-weight: 300;
     min-height: 300px;
-    background: #f9f9f9;
-    border-radius: 8px;
+    background: #000000;
+    border-radius: 20px;
+    color: white;
+
 }
 
 .secciones {
     display: flex;
-flex-wrap: wrap;/* 🔹 Organiza los elementos en columna */
-    align-items: center; /* 🔹 Centra las tarjetas */
-    gap: 10px; /* 🔹 Espacio entre tarjetas */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.parrafoP {
+    margin: 40px;
+    font-weight: 300;
 }
 
 .tarjeta {
-    width: 130px; 
-    height: 130px;/* 🔹 Ajusta el tamaño de las tarjetas */
+    width: 130px;
+    height: 130px;
     padding: 15px;
-    background: #851c1c;
+    /* background-color: #f1e020; */
+    background-color: #9a9bc5;
+    /* #bfcde0 */
+    /* #fff455*/
+    /* #9a9bc5 */
     border-radius: 5px;
     cursor: pointer;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    color: black;
     flex-direction: column;
     text-align: center;
     transition: background 0.3s;
+    /* box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2); */
 }
 
 .tarjeta:hover {
     background: #ddd;
 }
+
 #contenido-hoja {
     display: grid;
-    grid-template-columns: 1fr; /* 🔹 Una sola columna */
-    justify-items: center; /* 🔹 Centra las imágenes */
+    grid-template-columns: 1fr;
+    justify-items: center;
     gap: 15px;
     width: 100%;
 }
 
 .img-seccion {
-    display: block; /* 🔹 Evita que se alineen en fila */
-    width: 100%; /* 🔹 Fuerza que ocupen todo el ancho disponible */
-    max-width: 300px; /* 🔹 Controla el tamaño máximo */
-    border-radius: 8px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 
 .precio-final {
     margin-top: 20px;
+}
+
+.btn-eliminar {
+    background-color: #9a9bc5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin: 20px;
+
+}
+
+.contactoPresupuesto {
+    margin: 40px;
+}
+
+a.btnPresupuesto {
+    display: inline-block;
+   
+    padding: 10px 20px;
+    background-color: #9a9bc5;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    transition: transform 0.5s;
+  
+}
+
+a.btnPresupuesto:hover {
+    transform: scale(1.1);
 }
