@@ -915,28 +915,40 @@ footer {
 
 /* estilos  para creador de paginas */
 
-.contarinerPresu{
+.containerPresu{
     height: 300px;
+
+
     background: linear-gradient(45deg, #ff4e50, #fc913a);
 }
-.contarinerPresu p{
+.containerPresu{
+    height: 300px;
+    background: linear-gradient(45deg, #ff4e50, #fc913a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+}
+
+.containerPresu p{
     color: white;
     font-size: 20px;
-    display: flex;
-align-content: center;
-    width: 40%;
+    width: 60%; /* Puedes ajustarlo según tu preferencia */
+    margin-bottom: 20px; /* Espacio entre el texto y el botón */
 }
 
 .btnPresu {
     padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
-    background: #ff4e50;
+    background: #654a4b;
     color: white;
     border: none;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .btnPresu:hover {
@@ -964,7 +976,7 @@ align-content: center;
     gap: 30px;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     padding: 10px;
 }
