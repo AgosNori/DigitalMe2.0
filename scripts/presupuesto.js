@@ -103,25 +103,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-document.querySelectorAll(".like-btn").forEach((button) => {
-  const projectId = button.getAttribute("data-id");
-  const likeCount = button.querySelector(".like-count");
-
-  const projectRef = doc(db, "projects", projectId);
-
-  // Obtener el número de likes actual
-  getDoc(projectRef).then((docSnap) => {
-    if (docSnap.exists()) {
-      likeCount.textContent = docSnap.data().likes;
-    } else {
-      setDoc(projectRef, { likes: 0 });
-    }
-  });
-
-  button.addEventListener("click", async () => {
-    await updateDoc(projectRef, { likes: increment(1) });
-    const updatedDoc = await getDoc(projectRef);
-    likeCount.textContent = updatedDoc.data().likes;
-  });
-});
