@@ -96,6 +96,13 @@
     background-color: #ffc94a;
     border: none;
     border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight:300;
+  
+}
+.btnBook:hover{
+    background-color: #ffc94ac2;
 }
 
 .textCard {
@@ -119,6 +126,7 @@ margin-bottom: 30px;
 .cursos .titulo{
     margin: 40px;
     font-weight: 200;
+    color: black;
 }
 
 .tarjetasCursos .cardGenial:hover{
