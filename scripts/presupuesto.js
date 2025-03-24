@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hoja = document.getElementById("contenido-hoja");
   const precioTotal = document.getElementById("precio-total");
   let total = 0;
-  let seleccionadas = new Set(); // Para evitar duplicados
+  let seleccionadas = new Map(); // Para evitar duplicados
 
   // Diccionario de imágenes para cada sección
   const imagenes = {
@@ -60,33 +60,75 @@ document.addEventListener("DOMContentLoaded", () => {
       botonEliminar.textContent = "Eliminar";
       botonEliminar.classList.add("btn-eliminar");
 
-      // Evento para eliminar imagen y actualizar precio
-      botonEliminar.addEventListener("click", () => {
-        Swal.fire({
-            title: "¿Seguro que quieres eliminar esta sección?",
-            text: `Se eliminará "${nombre}" y su costo se restará del total.`,
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#d33",
-            cancelButtonColor: "#3085d6",
-            confirmButtonText: "Sí, eliminar",
-            cancelButtonText: "Cancelar"
-        }).then((result) => {
-            if (result.isConfirmed) {
-                hoja.removeChild(contenedor); // Eliminar contenedor
-                seleccionadas.delete(nombre); // Quitar del conjunto
-                total -= precio; // Restar del total
-                precioTotal.textContent = total; // Actualizar en pantalla
+    //   // Evento para eliminar imagen y actualizar precio
+    //   botonEliminar.addEventListener("click", () => {
+    //     Swal.fire({
+    //         title: "¿Seguro que quieres eliminar esta sección?",
+    //         text: `Se eliminará "${nombre}" y su costo se restará del total.`,
+    //         icon: "warning",
+    //         showCancelButton: true,
+    //         confirmButtonColor: "#d33",
+    //         cancelButtonColor: "#3085d6",
+    //         confirmButtonText: "Sí, eliminar",
+    //         cancelButtonText: "Cancelar"
+    //     }).then((result) => {
+    //         if (result.isConfirmed) {
+    //             hoja.removeChild(contenedor); // Eliminar contenedor
+    //             seleccionadas.delete(nombre); // Quitar del conjunto
+    //             total -= precio; // Restar del total
+    //             precioTotal.textContent = total; // Actualizar en pantalla
 
-                Swal.fire({
-                    icon: "success",
-                    title: "Sección eliminada",
-                    text: `"${nombre}" ha sido eliminada correctamente.`,
-                    confirmButtonText: "OK"
-                });
-            }
-        });
-    });
+    //             Swal.fire({
+    //                 icon: "success",
+    //                 title: "Sección eliminada",
+    //                 text: `"${nombre}" ha sido eliminada correctamente.`,
+    //                 confirmButtonText: "OK"
+    //             });
+    //         }
+    //     });
+    // });
+
+    botonEliminar.addEventListener("click", () => {
+      Swal.fire({
+          title: "¿Seguro que quieres eliminar esta sección?",
+          text: `Se eliminará "${nombre}" y su costo se restará del total.`,
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#d33",
+          cancelButtonColor: "#3085d6",
+          confirmButtonText: "Sí, eliminar",
+          cancelButtonText: "Cancelar"
+      }).then((result) => {
+          if (result.isConfirmed) {
+              // Eliminar de la vista previa
+              hoja.removeChild(contenedor);
+  
+              // Eliminar del conjunto de seleccionadas
+              seleccionadas.delete(nombre);
+  
+              // Restar del total
+              total -= precio;
+              precioTotal.textContent = total;
+  
+              // Eliminar del presupuesto
+              const index = items.findIndex(item => item.description === nombre);
+              if (index !== -1) {
+                  items.splice(index, 1); // Eliminar el ítem del array de presupuesto
+              }
+  
+              // Actualizar la tabla del presupuesto
+              actualizarPresupuesto();
+  
+              Swal.fire({
+                  icon: "success",
+                  title: "Sección eliminada",
+                  text: `"${nombre}" ha sido eliminada correctamente.`,
+                  confirmButtonText: "OK"
+              });
+          }
+      });
+  });
+  
       // Agregar imagen y botón al contenedor
       contenedor.appendChild(nuevaImagen);
       contenedor.appendChild(botonEliminar);
@@ -95,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hoja.appendChild(contenedor);
 
       // Agregar al conjunto de seleccionadas
-      seleccionadas.add(nombre);
+      seleccionadas.set(nombre);
 
       // Actualizar precio total
       total += precio;
