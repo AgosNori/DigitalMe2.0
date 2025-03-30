@@ -852,7 +852,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .navBarHeader {
         display: none;
         flex-direction: column;

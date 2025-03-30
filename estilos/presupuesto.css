@@ -248,3 +248,34 @@ button:hover {
     border-top: 2px solid #ddd;
     text-align: end;
 }
+@media ( max-width:870px){
+    .container{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center ;
+    }
+    .panel , .hoja{
+        width: 90%;
+    }
+    #contenido-hoja{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #presupuesto{
+        margin: 0;
+        transform: scale(0.7);
+        
+    }
+    .seccionPresupuesto{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:490px){
+    #contenido-hoja{
+        grid-template-columns: 1fr;
+    }
+}

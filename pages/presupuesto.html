@@ -176,12 +176,13 @@
                 Presupuesto</a>
             <a href="contacto.html" class="btnPresupuesto">Solicitar Ayuda</a>
         </div>
+        <section class="seccionPresupuesto">
         <div id="presupuesto">
             <div class="headerPresu">
                 <img src="/imagenes/sf_logoRedondo.png" class="logo"
                     alt="logo">
                 <h2 class="tituloPresu">Presupuesto Estimativo</h2>
-
+           
             </div>
             <div class="fechaPresu">Fecha: <span id="fechaActual"></span></div>
             <div class="importante">
@@ -192,7 +193,7 @@
                     definir claramente todos los aspectos relacionados con el
                     trabajo solicitado.</p>
             </div>
-            <table border="1" width="100%">
+            <table border ="1" width="100%">
                 <thead>
                     <tr>
                         <th> Cantidad</th>
@@ -207,6 +208,7 @@
             <p><strong>IVA (10%):</strong> $<span id="iva">0.00</span></p>
             <p><strong>Total:</strong> $<span id="total">0.00</span></p>
             <button onclick="generarPDF()">Descargar PDF</button>
+            
             <hr>
             <div class="footerPresupuesto">
                 <p>https://digitalme.com.ar</p>
@@ -214,7 +216,7 @@
             </div>
 
         </div>
-
+    </section>  
         <footer class="footer">
             <div class="footer-contenido">
                 <div class="imgFooter">
@@ -313,6 +315,7 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script >
       let items = [];
       let contador = 1;
@@ -431,7 +434,7 @@ function eliminarElemento(id) {
 
 function generarPDF() {
     const elemento = document.getElementById('presupuesto');
-
+   // <img src="data:image/png;base64,{{base64_image_data}}" alt="Imagen del presupuesto" />
     const opciones = {
   margin: [10, 10, 10, 10],
   filename: 'Presupuesto.pdf',
